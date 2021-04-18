@@ -58,15 +58,15 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   # assets:
   assets:
-    - assets/svg/firebase.svg
-    - assets/svg/flutter.svg
-    - assets/svg/java.svg
-    - assets/svg/nodejs.svg
-    - assets/svg/python.svg
-    - assets/svg/react.svg
-    - assets/svg/redux.svg
-    - assets/svg/unity.svg
-
+    - asset/svg/firebase.svg
+    - asset/svg/flutter.svg
+    - asset/svg/java.svg
+    - asset/svg/nodejs.svg
+    - asset/svg/python.svg
+    - asset/svg/react.svg
+    - asset/svg/redux.svg
+    - asset/svg/unity.svg
+    - images/me.png
   #   - images/a_dot_burr.jpeg
 
 
@@ -84,23 +84,23 @@ flutter:
   fonts:
     - family: MontserratAlternates
       fonts:
-        - asset: assets/fonts/Montserrat_Alternates/MontserratAlternates-Black.ttf
+        - asset: asset/fonts/Montserrat_Alternates/MontserratAlternates-Black.ttf
           weight: 900
-        - asset: assets/fonts/Montserrat_Alternates/MontserratAlternates-ExtraBold.ttf
+        - asset: asset/fonts/Montserrat_Alternates/MontserratAlternates-ExtraBold.ttf
           weight: 800
-        - asset: assets/fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf
+        - asset: asset/fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf
           weight: 700
-        - asset: assets/fonts/Montserrat_Alternates/MontserratAlternates-SemiBold.ttf
+        - asset: asset/fonts/Montserrat_Alternates/MontserratAlternates-SemiBold.ttf
           weight: 600
-        - asset: assets/fonts/Montserrat_Alternates/MontserratAlternates-Medium.ttf
+        - asset: asset/fonts/Montserrat_Alternates/MontserratAlternates-Medium.ttf
           weight: 500
-        - asset: assets/fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf
+        - asset: asset/fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf
           weight: 400
-        - asset: assets/fonts/Montserrat_Alternates/MontserratAlternates-Light.ttf
+        - asset: asset/fonts/Montserrat_Alternates/MontserratAlternates-Light.ttf
           weight: 300
-        - asset: assets/fonts/Montserrat_Alternates/MontserratAlternates-ExtraLight.ttf
+        - asset: asset/fonts/Montserrat_Alternates/MontserratAlternates-ExtraLight.ttf
           weight: 200
-        - asset: assets/fonts/Montserrat_Alternates/MontserratAlternates-Thin.ttf
+        - asset: asset/fonts/Montserrat_Alternates/MontserratAlternates-Thin.ttf
           weight: 100
 
   # fonts:

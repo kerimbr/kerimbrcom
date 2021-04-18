@@ -36,9 +36,16 @@ class _IntroViewState extends BaseState<IntroView> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           // Picture
-          CircleAvatar(
-            radius: 100,
-            backgroundImage: NetworkImage("http://download.kerimbr.com/kerimbr.jpg"),
+          Container(
+            width: 150,
+            height: 150,
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(200),
+                child: Image.asset("images/me.png",fit: BoxFit.fitWidth,)
+            ),
+            decoration: BoxDecoration(
+              shape: BoxShape.circle
+            ),
           ),
           // Name & Surname
           Padding(
