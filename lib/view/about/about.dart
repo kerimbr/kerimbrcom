@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:kerimbr_com/core/base/state/base_state.dart';
+import 'package:kerimbr_com/core/constants/enums/app_themes_enum.dart';
 import 'package:kerimbr_com/core/extensions/context_extension.dart';
-import 'package:kerimbr_com/widgets/image_with_tooltip.dart';
 
 class About extends StatefulWidget {
   Key? key;
@@ -13,6 +14,9 @@ class About extends StatefulWidget {
 }
 
 class _AboutState extends BaseState<About> {
+
+  final ScrollController _scrollController = ScrollController();
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -51,20 +55,102 @@ class _AboutState extends BaseState<About> {
               child: Container(
                 width: dynamicWidth(0.5),
                 height: 70,
-                child: ListView(
-                  shrinkWrap: true,
-                  scrollDirection: Axis.horizontal,
-                  children: [
-                    SVGWithToolTip("asset/svg/flutter.svg","Flutter"),
-                    SVGWithToolTip("asset/svg/react.svg","ReactJs"),
-                    SVGWithToolTip("asset/svg/firebase.svg","Firebase"),
-                    SVGWithToolTip("asset/svg/java.svg","Java"),
-                    SVGWithToolTip("asset/svg/nodejs.svg","NodeJS"),
-                    SVGWithToolTip("asset/svg/python.svg","Python"),
-                    SVGWithToolTip("asset/svg/redux.svg","Redux"),
-                    SVGWithToolTip("asset/svg/unity.svg","Unity 3D"),
-
-                  ],
+                child: Scrollbar(
+                  controller: _scrollController,
+                  isAlwaysShown: true,
+                  child: ListView(
+                    shrinkWrap: true,
+                    controller: _scrollController,
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      Tooltip(
+                        message: "Flutter",
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal:10),
+                          child: FlutterLogo(
+                            size: 50,
+                          ),
+                        ),
+                      ),
+                      Tooltip(
+                        message: "ReactJS",
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal:10),
+                          child: Icon(
+                              MaterialCommunityIcons.react,
+                              size: 50,
+                              color: Colors.lightBlueAccent,
+                          ),
+                        ),
+                      ),
+                      Tooltip(
+                        message: "Firebase",
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal:10),
+                          child: Icon(
+                            MaterialCommunityIcons.firebase,
+                            size: 50,
+                            color: Colors.orange,
+                          ),
+                        ),
+                      ),
+                      Tooltip(
+                        message: "Java",
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal:10),
+                          child: Icon(
+                            MaterialCommunityIcons.language_java,
+                            size: 50,
+                            color: Colors.red,
+                          ),
+                        ),
+                      ),
+                      Tooltip(
+                        message: "NodeJS",
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal:10),
+                          child: Icon(
+                            MaterialCommunityIcons.nodejs,
+                            size: 50,
+                            color: Colors.green,
+                          ),
+                        ),
+                      ),
+                      Tooltip(
+                        message: "Python",
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal:10),
+                          child: Icon(
+                            MaterialCommunityIcons.language_python,
+                            size: 50,
+                            color: Colors.blue.shade600,
+                          ),
+                        ),
+                      ),
+                      Tooltip(
+                        message: "Redux",
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal:10),
+                          child: Icon(
+                              Fontisto.redux,
+                              size: 50,
+                              color: Colors.deepPurpleAccent
+                          ),
+                        ),
+                      ),
+                      Tooltip(
+                        message: "Unity 3D",
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal:10),
+                          child: Icon(
+                            MaterialCommunityIcons.unity,
+                            size: 50,
+                            color: context.currentAppThemes == AppThemes.LIGHT ? Colors.grey.shade900 : Colors.grey.shade200
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),

@@ -41,7 +41,7 @@ class _IntroViewState extends BaseState<IntroView> {
             height: 150,
             child: ClipRRect(
               borderRadius: BorderRadius.circular(200),
-                child: Image.asset("images/me.png",fit: BoxFit.fitWidth,)
+                child: Image.network("/assets/images/me.png",fit: BoxFit.fitWidth,)
             ),
             decoration: BoxDecoration(
               shape: BoxShape.circle

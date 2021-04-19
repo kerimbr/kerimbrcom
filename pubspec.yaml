@@ -37,6 +37,11 @@ dependencies:
   animated_icon_button: ^1.0.0
   url_launcher: ^6.0.2
   flutter_svg: ^0.21.0+1
+  flutter_vector_icons: ^1.0.0
+  #flutter_icons:
+    # git:
+    #  url: git://github.com/adarsh-technocrat/flutter-icons.git
+  # ref: null-safety-migration
 
 
 dev_dependencies:
