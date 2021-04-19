@@ -20,7 +20,7 @@
   <a href="https://github.com/kerimbr/kerimbrcom"></a>
 
   <h3 align="center">Kişisel Web Sayfası</h3>
-  <a align="center" href="https://www.kerimbr.com">Canlı Önizleme</a>
+  <a align="center" href="http://www.kerimbr.com">Canlı Önizleme</a>
 
   
 
@@ -31,7 +31,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Proje Hakkında
 
-[![Product Name Screen Shot][product-screenshot]](https://www.kerimbr.com)
+[![Product Name Screen Shot][product-screenshot]](http://www.kerimbr.com)
 
 Flutter Web 2.0 ile geliştirilmiş kişisel web sayfası. 
 
