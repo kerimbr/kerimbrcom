@@ -31,7 +31,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Proje Hakkında
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://www.kerimbr.com)
 
 Flutter Web 2.0 ile geliştirilmiş kişisel web sayfası. 
 
